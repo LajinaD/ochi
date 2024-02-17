@@ -2,9 +2,9 @@ import React from 'react'
 
 function Footer() {
   return (
-    <div data-scroll data-scroll-section data-scroll-speed="-.03" className='w-full h-screen bg-zinc-100 rounded-t-3xl font-["Founders_Grotesk"] text-zinc-900 px-16 py-24 flex '>
+    <div data-scroll data-scroll-section data-scroll-speed="-.03" className='w-full h-screen bg-zinc-100 rounded-t-3xl text-zinc-900 px-16 py-24 flex '>
         <div className="w-1/2 h-full flex flex-col justify-between">
-            <div className="heading ">
+            <div className="heading font-Founders_semibold ">
                 <h1 className='text-[7vw] font-semibold uppercase leading-[6vw] tracking-tighter'>Eye-</h1>
                 <h1 className='text-[7vw] font-semibold uppercase leading-[6vw] tracking-tighter'>Opening</h1>
             </div>
@@ -17,17 +17,17 @@ function Footer() {
 					</svg>
         </div>
         <div className="w-1/2 h-full ">
-            <div className="heading mb-9">
+            <div className="heading mb-9 font-Founders_semibold ">
             <h1 className='text-[7vw] font-semibold uppercase leading-[6vw] tracking-tighter'>presentations</h1>
             </div>
-            <h1 className='text-xl px-2 mb-3 text-zinc-700'>S:</h1>
-            <div className="content flex flex-col text-lg text-zinc-700 capitalize underline underline-offset-4 px-2">
+            <h1 className='text-xl px-2 mb-3 text-zinc-700 font-Neue_Montreal'>S:</h1>
+            <div className="content flex flex-col text-base text-zinc-600 capitalize underline underline-offset-4 px-2 font-Neue_Montreal">
                 {["Instagram", "Facebook", "LinkedIn","Behance"].map((item,index)=>(
-                    <a href="#">{item}</a>
+                    <a href="#" >{item}</a>
                 ))}
             </div>
-            <h1 className='text-xl px-2 mb-3 text-zinc-700 mt-12'>M:</h1>
-            <div className="content flex flex-col text-lg text-zinc-700 capitalize underline underline-offset-4 px-2">
+            <h1 className='text-xl px-2 mb-3 text-zinc-700 mt-12 font-Neue_Montreal'>M:</h1>
+            <div className="content flex flex-col text-base text-zinc-600  capitalize underline underline-offset-4 px-2 font-Neue_Montreal ">
                 {["home", "services", "our work","about us", "insights", "contact us"].map((item,index)=>(
                     <a href="#">{item}</a>
                 ))}

@@ -17,9 +17,9 @@ function Ready() {
     });
 
   return (
-    <div data-scroll data-scroll-section data-scroll-speed="-.1" className='w-full h-screen bg-[#CDEA68] rounded-t-2xl flex flex-col justify-center items-center relative '>
+    <div data-scroll data-scroll-section data-scroll-speed="-.1" className='w-full  bg-[#CDEA68] rounded-t-2xl flex flex-col justify-center items-center relative py-[30vh]'>
         {["ready","to start", "the project ?"].map((item,index)=>(
-            <h1 className='uppercase text-[12vw] text-zinc-900 leading-[10vw] tracking-tighter font-semibold font-["Founders_Grotesk"]'>{item}</h1>
+            <h1 className='uppercase text-[12vw] text-zinc-900 leading-[10vw] tracking-tighter font-semibold font-Founders_semibold'>{item}</h1>
         ))}
         <div  className="eyes absolute w-1/3  h-[12vw] flex gap-8 justify-center">
             <div className="whitecircle h-[12vw] w-[12vw] bg-zinc-100 rounded-full flex justify-center items-center">
