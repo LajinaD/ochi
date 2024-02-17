@@ -13,7 +13,7 @@ function LandingPage() {
             <div className="masker ">
               <div className="w-fit flex ">
                 {index === 1 && (
-                  <motion.div initial={{width :0}} animate={{width:"7vw"}} transition={{ease: [0.76, 0, 0.24, 1], duration: 1 }} className="w-[7vw] h-[5vw] relative -top-[.8vw]  rounded-md mr-[1vw] bg-[url(https://ochi.design/wp-content/uploads/2022/04/content-image01.jpg)] bg-cover bg-center "></motion.div>
+                  <motion.div initial={{width :0}} animate={{width:"7vw"}} transition={{ease: [0.76, 0, 0.24, 1], duration: 1 }} className="w-[12vw] h-[5vw] relative -top-[.8vw]  rounded-md mr-[.5vw] bg-[url(https://ochi.design/wp-content/uploads/2022/04/content-image01.jpg)] bg-cover bg-center "></motion.div>
                 )}
                 <h1 className='text-[7vw] uppercase leading-[6vw] tracking-tighter font-Founders_semibold font-semibold text-zinc-900'>
                   {item}
