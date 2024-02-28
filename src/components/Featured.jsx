@@ -5,18 +5,18 @@ function Featured() {
   const [isHovering1, setHovering1] = useState(false);
   const [isHovering2, setHovering2] = useState(false);
   return (
-    <div  className='w-full py-10 bg-zinc-100 font-Neue_Montreal '>
-      <div className="w-full py-8 px-16">
-        <h1 className="text-black text-6xl tracking-tight">
+    <div  className='w-full md:py-10 py-5 bg-zinc-100 font-Neue_Montreal '>
+      <div className="w-full py-8 md:px-16 px-6">
+        <h1 className="text-black md:text-6xl text-3xl tracking-tight">
           Featured projects
         </h1>
-        <div className="cards flex gap-5  w-full border-t-[1px] border-zinc-400 mt-12 pt-20">
+        <div className="cards flex md:flex-row flex-col gap-5 w-full border-t-[1px] border-zinc-400 md:mt-12 mt-6 md:pt-20 pt-10">
           <div
             onMouseEnter={() => setHovering1(true)}
             onMouseLeave={() => setHovering1(false)}
-            className="cardcontainer h-[80vh] w-1/2 relative flex items-center justify-center"
+            className="cardcontainer md:h-[80vh] md:w-1/2 w-full h-[40vh] relative flex items-center justify-center"
           >
-            <h1 className="absolute z-10 flex overflow-hidden text-8xl font-semibold leading-none tracking-tighter left-full -translate-x-1/2 top-1/2 -translate-y-1/2 text-[#CDEA68]">
+            <h1 className="absolute z-10 flex overflow-hidden md:text-8xl text-6xl font-semibold leading-none tracking-tighter md:left-full left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 text-[#CDEA68]">
               {"FYDE".split("").map((item, index) => (
                 <motion.span
                   initial={{ y: "100%" }}
@@ -48,9 +48,9 @@ function Featured() {
           <div
             onMouseEnter={() => setHovering2(true)}
             onMouseLeave={() => setHovering2(false)}
-            className="cardcontainer h-[80vh] w-1/2 relative flex items-center justify-center"
+            className="cardcontainer md:h-[80vh] md:w-1/2 w-full h-[40vh] relative flex items-center justify-center"
           >
-            <h1 className="absolute flex overflow-hidden z-10 text-8xl font-semibold leading-none tracking-tighter right-full translate-x-1/2 top-1/2 -translate-y-1/2 text-[#CDEA68]">
+            <h1 className="absolute flex overflow-hidden z-10 md:text-8xl text-6xl font-semibold leading-none tracking-tighter md:right-full right-1/2 translate-x-1/2 top-1/2 -translate-y-1/2 text-[#CDEA68]">
               {"VISE".split("").map((item, index) => (
                 <motion.span
                   initial={{ y: "100%" }}
